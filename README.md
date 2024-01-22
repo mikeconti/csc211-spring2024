@@ -61,7 +61,7 @@ Upon successful completion of this course, each student will be able to:
 
 ### Required Textbooks
 
-* [Problem Solving with C++](https://www.pearson.com/us/higher-education/program/Savitch-Problem-Solving-with-C-Plus-My-Lab-Programming-with-Pearson-e-Text-Access-Card-Package-10th-Edition/PGM1743309.html), 10th Ed., W. Savitch.
+* [Problem Solving with C++](https://www.pearson.com/en-us/subject-catalog/p/problem-solving-with-c/P200000003225/9780137982226), 10th Ed., W. Savitch.
 
 
 ### Lab Sessions
