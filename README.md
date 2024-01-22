@@ -62,7 +62,7 @@ Upon successful completion of this course, each student will be able to:
 ### Required Textbooks
 
 * [Problem Solving with C++](https://www.pearson.com/en-us/subject-catalog/p/problem-solving-with-c/P200000003225/9780137982226), 10th Ed., W. Savitch.
-* > ⚠️ Do not buy the "MyLab" package
+> ⚠️ Do not buy the "MyLab" package
 
 
 ### Lab Sessions
