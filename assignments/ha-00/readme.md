@@ -36,4 +36,4 @@ In this assignment you are expected to work in groups.   Your group will write a
 
 7. Your paper can contain figures, tables, images etc. The length including these media should be about 7-12 pages with 1.5 spacing.
 
-8. To submit the assignment, you should generate a PDF containing each group members' name and upload it to Gradescope by the due date (02/08/21).
+8. To submit the assignment, you should generate a PDF containing each group members' name and upload it to Gradescope by the due date (02/04/24).
