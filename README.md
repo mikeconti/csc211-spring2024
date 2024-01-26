@@ -11,15 +11,15 @@
 
 * **Undergraduate:** Angel Bencosme, Yemi Fasina, Matt Hogan, Jenny You <br>
 
-<!-- **Office Hours Schedule**
+**Office Hours Schedule**
 Location: Tyler Hall ~ Third (top) Floor Lounge
 
-| Day | Staff Member |  Time |Location |
+| Day | Staff Member |  Time |
 | --- | --- | --- | --- |
-|Monday |   Matt <br> Jacob|   12:00p - 1:00p <br> 5:00p - 6:00p  | Tyler third floor lounge <br> &emsp; &emsp; &emsp;[Zoom](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09)  |
-|Tuesday |  Jacob |   2:00p - 3:00p| &emsp; &emsp; Tyler 132 <br> Tyler third floor lounge  |
-|Wednesday   |  Matt <br> Jenny |  12:00p - 1:00p <br> 2:30p - 3:30p | Tyler third floor lounge <br> Tyler third floor lounge |
-|Thursday   | Puja <br> Yemi <br> Mike <br> Jacob | 8:30a - 9:30a <br> 10:30a - 12:30p <br>  1:45p - 3:00p <br> 2:00p - 3:00p | Tyler third floor lounge <br> Tyler third floor lounge <br> Tyler third floor lounge <br> Tyler third floor lounge |
+|Monday |   Matt <br> Yemi|   9:00a - 10:00a <br> 1:00p - 2:00p  |
+|Tuesday |  Puja <br> Jenny  <br> Angel |   9:00a - 10:00a <br> 11:00a - 12:00p <br> 12:00p - 1:45p  |
+|Thursday | Puja <br> Angel |  9:00a - 10:00a <br> 11:00a - 12:00p <br> 12:00p - 1:45p |
+|Friday |  Matt <br> Yemi|   9:00a - 10:00a <br> 11:00a - 1:00p  |
 
 **Discussion Session**
 <br> Location: Tyler 052
@@ -28,8 +28,8 @@ Location: Tyler Hall ~ Third (top) Floor Lounge
 
 | Day | Staff Member |  Time | Location |
 | --- | --- | --- | --- |
-|Tuesday |   Matt |   4:00p - 5:00p  | Online: [Zoom](https://uri-edu.zoom.us/j/98120583033?pwd=T2JGMTRwb2xYL1doc0dwZUZZZUlBQT09)| 
-|Wednesday |   Jenny |   1:00p - 2:00p  |Tyler 3rd Floor|
+|Tuesday |   Matt |   4:30p - 5:30p  |Tyler 3rd Floor|
+|Wednesday | Puja |   9:00a - 10:00a  | Tyler 3rd Floor|
 
 
 **Lab**
@@ -37,9 +37,9 @@ Location: Tyler Hall ~ Third (top) Floor Lounge
 
 | Day | Staff Member |  Time | Room |
 | --- | --- | --- |--- |
-|Monday |   Matt, Yemi, Puja | 2:00p - 3:45p  | Tyler 055 |
-|Friday |   Matt, Jenny, Jacob, Yemi, Puja|   12:00p - 1:45p| Library 166 |
-|Friday |    Matt, Jenny, Jacob, Yemi |   2:00p - 3:45p | Library 166 | -->
+|Monday |   Puja, Matt, Yemi, Angel | 2:00p - 3:45p  | Washburn Hall  220 |
+|Wednesday |   Puja, Matt, Yemi, Angel|   12:00p - 1:45p| Tyler Hall 055|
+|Friday |    Matt, Angel |   2:00p - 3:45p | Engineering Building Room 045 |
 
 ### Course Overview
 
