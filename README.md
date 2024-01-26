@@ -37,9 +37,9 @@ Location: Tyler Hall ~ Third (top) Floor Lounge
 
 | Day | Staff Member |  Time | Room |
 | --- | --- | --- |--- |
-|Monday |   Puja, Matt, Yemi, Angel | 2:00p - 3:45p  | Washburn Hall  220 |
-|Wednesday |   Puja, Matt, Yemi, Angel|   12:00p - 1:45p| Tyler Hall 055|
-|Friday |    Matt, Angel |   2:00p - 3:45p | Engineering Building Room 045 |
+|Monday |   Puja, Matt, Yemi, Angel |  3:00p - 4:45p  | Washburn Hall  220 |
+|Wednesday |   Puja, Matt, Yemi, Angel|   3:00p - 4:45p| Tyler Hall 055|
+|Friday |    Matt, Angel |   3:30p - 5:15p | Engineering Building Room 045 |
 
 ### Course Overview
 
