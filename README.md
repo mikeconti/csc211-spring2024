@@ -15,7 +15,7 @@
 Location: Tyler Hall ~ Third (top) Floor Lounge
 
 | Day | Staff Member |  Time |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 |Monday |   Matt <br> Yemi|   9:00a - 10:00a <br> 1:00p - 2:00p  |
 |Tuesday |  Puja <br> Jenny  <br> Angel |   9:00a - 10:00a <br> 11:00a - 12:00p <br> 12:00p - 1:45p  |
 |Thursday | Puja <br> Angel |  9:00a - 10:00a <br> 11:00a - 12:00p <br> 12:00p - 1:45p |
