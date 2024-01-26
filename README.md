@@ -33,7 +33,7 @@ Location: Tyler Hall ~ Third (top) Floor Lounge
 
 
 **Lab**
-<br>Location: Library 166 / Tyler 055
+<!-- <br>Location: multi -->
 
 | Day | Staff Member |  Time | Room |
 | --- | --- | --- |--- |
