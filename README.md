@@ -22,7 +22,7 @@ Location: Tyler Hall ~ Third (top) Floor Lounge
 |Friday |  Matt <br> Yemi|   9:00a - 10:00a <br> 11:00a - 1:00p  |
 
 **Discussion Session**
-<br> Location: Tyler 052
+<br> Location: Tyler 3rd Floor
 
 > Attending 80% of discussion sessions will earn you an additional 5pts on your final exam.
 
