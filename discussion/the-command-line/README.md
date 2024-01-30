@@ -12,7 +12,7 @@ On Windows, you have the option of Command Prompt or Windows Powershell, where P
 
 Now then, what's the point of this matrix-esque window on our screen? To answer this question, we need consider a time where computing was simple... really simple.
 
-![The Macintosh](https://www.thoughtco.com/thmb/Q7Jjx7u4-bCrse19PSmkAF3nwmc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/apple-macintosh-classic-computer-118265826-5c3c0896c9e77c0001dfbfef.jpg "The Macintosh" =400x)
+<img src="https://www.thoughtco.com/thmb/Q7Jjx7u4-bCrse19PSmkAF3nwmc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/apple-macintosh-classic-computer-118265826-5c3c0896c9e77c0001dfbfef.jpg" width="40%"/>
 
 *Apple's "Macintosh", 1984*
 
