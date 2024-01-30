@@ -2,7 +2,7 @@
 
 These days, we have a variety of different command line interfaces, but what actually is a command line? Great question! Let's take a look...
 
-![Terminal.PNG](imgs/terminal.png "Terminal" =400x)
+<img src="imgs/terminal.png" width="40%"/>
 
 Look familiar? That's right, the Terminal application on macOS is the command line for Mac users!
 
