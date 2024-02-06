@@ -103,12 +103,12 @@ Terminate program
 
 The following are Pseudocode problems you should attempt with your groups and record your answers in your `lab-02.txt` file. All of the following problems should meet the requirements of an algorithm established in Section 1.
 
-:white_check_mark: Question 4. Write an algorithm to print all of the even numbers from 1-100. <br/>
-:white_check_mark: Question 5. Write an algorithm to print True if a given number is a prime number and false if it isn't (a prime number being a number that is only divisible by 1 and itself e.g. 47).<br />
-:white_check_mark: Question 6. Write an algorithm to print the sum of all numbers up to a given number.<br />
-:white_check_mark: Question 7. Write an algorithm to replace all instances of a given letter in a word with another given letter.<br />
-:white_check_mark: Question 8. Write an algorithm to find the largest value in a list of numbers.<br /> 
-:white_check_mark: Question 9. Write an algorithm decrease the value of every number in a series of numbers by 1.<br />
+:white_check_mark: Question 3. Write an algorithm to print all of the even numbers from 1-100. <br/>
+:white_check_mark: Question 4. Write an algorithm to print True if a given number is a prime number and false if it isn't (a prime number being a number that is only divisible by 1 and itself e.g. 47).<br />
+:white_check_mark: Question 5. Write an algorithm to print the sum of all numbers up to a given number.<br />
+:white_check_mark: Question 6. Write an algorithm to replace all instances of a given letter in a word with another given letter.<br />
+:white_check_mark: Question 7. Write an algorithm to find the largest value in a list of numbers.<br /> 
+:white_check_mark: Question 8. Write an algorithm decrease the value of every number in a series of numbers by 1.<br />
 
 
 # Part 4. Data Types and Arithmetic Expressions [45 minutes]
@@ -130,7 +130,7 @@ int main(){
 }
 ```
 
-:white_check_mark: Question 10. Record what you think c++ would output for the above expression.
+:white_check_mark: Question 9. Record what you think c++ would output for the above expression.
 
 If you said 1, you would be correct. We know that 7 / 4 is in fact 1.75, but because the compiler sees that it's dealing with two integers, it seems natural that the output would also be an integer. In this case, the floor of 1.75 is 1. To work around this, we need to `cast` the output into the desired data type. In this example, we want a double. We can modify the expression above to be ~
 
@@ -180,15 +180,15 @@ You can assume access to `sqrt(expression)` and `pow(base, exponent)`, which can
 
 **In your lab-02 answer document:**
 
-:white_check_mark: Question 11. Describe the different data types your group used in your program implementations for the previous questions and why you decided to use them.
+:white_check_mark: Question 10. Describe the different data types your group used in your program implementations for the previous questions and why you decided to use them.
 
 # Compilers [15 minutes]
 
 In the last few lectures, we talked about some of the different roles that compilers perform and how they help us develop code. Thanks to compilers, we don't need to focus on the syntax and convoluted control-of-flow considerations that are involved when using machine level languages. Instead, we get to focus on the semantic approaches to how a problem should be solved. 
 
-:white_check_mark: Question 12. With your group, describe in your own words what the different roles of a compiler are.
+:white_check_mark: Question 11. With your group, describe in your own words what the different roles of a compiler are.
 
-:white_check_mark: Question 13. Name the compiler that we use in CSC 211.
+:white_check_mark: Question 12. Name the compiler that we use in CSC 211.
 
 Let's inspect the assembly code our compiler generates when it compiles the `program1.cpp` file that you implemented in Part 4 by running the below command.
 

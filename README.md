@@ -7,18 +7,17 @@
 
 **Teaching Assistants:** 
 
-* **Graduate:**  Puja Ghosh <br>
-
-* **Undergraduate:** Angel Bencosme, Yemi Fasina, Matt Hogan, Jenny You <br>
+* **Undergraduate:** Angel Bencosme, Jacob Dauphinais, Yemi Fasina, Matt Hogan, Jenny You <br>
 
 **Office Hours Schedule**
 Location: Tyler Hall ~ Third (top) Floor Lounge
 
 | Day | Staff Member |  Time |
 | --- | --- | --- |
-|Monday |   Matt <br> Yemi|   9:00a - 10:00a <br> 1:00p - 2:00p  |
-|Tuesday |  Puja <br> Jenny  <br> Angel |   9:00a - 10:00a <br> 11:00a - 12:00p <br> 12:00p - 1:45p  |
-|Thursday | Puja <br> Angel <br> Michael|  9:00a - 10:00a <br> 12:00p - 1:45p <br> 12:00p - 1:00p |
+|Monday |   Matt <br> Yemi <br> Jacob (virtual) |   9:00a - 10:00a <br> 1:00p - 2:00p <br> 6:00p - 8:00p [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
+|Tuesday |  Jenny  <br> Angel <br> Jacob (virtual) |   11:00a - 12:00p <br> 12:00p - 1:45p <br> 6:00p - 8:00p [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
+|Wednesday | Jacob (virtual) |  9:00a - 10:00a [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
+|Thursday | Angel <br> Michael|  12:00p - 1:45p <br> 12:00p - 1:00p |
 |Friday |  Matt <br> Yemi|   9:00a - 10:00a <br> 11:00a - 1:00p  |
 
 **Discussion Session**
@@ -29,7 +28,7 @@ Location: Tyler Hall ~ Third (top) Floor Lounge
 | Day | Staff Member |  Time | Location |
 | --- | --- | --- | --- |
 |Tuesday |   Matt |   4:30p - 5:30p  |Tyler 3rd Floor|
-|Wednesday | Puja |   9:00a - 10:00a  | Tyler 3rd Floor|
+|Thursday | Jenny |   12:00p - 1:00p  | Tyler 3rd Floor|
 
 
 **Lab**
@@ -37,8 +36,8 @@ Location: Tyler Hall ~ Third (top) Floor Lounge
 
 | Day | Staff Member |  Time | Room |
 | --- | --- | --- |--- |
-|Monday |   Puja, Matt, Jenny, Angel |  3:00p - 4:45p  | Washburn Hall  220 |
-|Wednesday |   Puja, Matt, Jenny, Angel|   3:00p - 4:45p| Tyler Hall 055|
+|Monday |   Jacob, Matt, Jenny, Angel |  3:00p - 4:45p  | Washburn Hall  220 |
+|Wednesday |   Jacob, Matt, Jenny, Angel|   3:00p - 4:45p| Tyler Hall 055|
 |Thursday |    Matt, Angel |   3:30p - 5:15p | Engineering Building Room 045 |
 
 ### Course Overview
