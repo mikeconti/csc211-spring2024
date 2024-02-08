@@ -10,15 +10,14 @@
 * **Undergraduate:** Angel Bencosme, Jacob Dauphinais, Yemi Fasina, Matt Hogan, Jenny You <br>
 
 **Office Hours Schedule**
-Location: Tyler Hall ~ Third (top) Floor Lounge
 
-| Day | Staff Member |  Time |
-| --- | --- | --- |
-|Monday |   Matt <br> Yemi <br> Jacob (virtual) |   9:00a - 10:00a <br> 1:00p - 2:00p <br> 6:00p - 8:00p [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
-|Tuesday |  Jenny  <br> Angel <br> Jacob (virtual) |   11:00a - 12:00p <br> 12:00p - 1:45p <br> 6:00p - 8:00p [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
-|Wednesday | Jacob (virtual) |  9:00a - 10:00a [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
-|Thursday | Angel <br> Michael|  12:00p - 1:45p <br> 12:00p - 1:00p |
-|Friday |  Matt <br> Yemi|   9:00a - 10:00a <br> 11:00a - 1:00p  |
+| Day | Staff Member |  Time | Location |
+| --- | --- | --- | --- |
+|Monday |   Matt <br> Yemi <br> Jacob |   9:00a - 10:00a <br> 1:00p - 2:00p <br> 6:00p - 8:00p | Tyler third floor lounge <br> Tyler third floor lounge <br> &ensp; Virtual: [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
+|Tuesday |  Jenny  <br> Angel <br> Jacob |   11:00a - 12:00p <br> 12:00p - 1:45p <br> 6:00p - 8:00p | Tyler third floor lounge <br> Tyler third floor lounge <br> &ensp; Virtual: [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
+|Wednesday | Jacob|  9:00a - 10:00a | &ensp; Virtual: [Zoom Link](https://us05web.zoom.us/j/9563802283?pwd=cHRPN0NLWFU4Q2hoVks0NkJRUGRZQT09) |
+|Thursday | Angel <br> Michael |  12:00p - 1:45p <br> 12:00p - 1:00p | Tyler third floor lounge <br> &emsp; &emsp; Tyler 132 |
+|Friday |  Matt <br> Yemi |  9:00a - 10:00a <br> 11:00a - 1:00p | Tyler third floor lounge <br> Tyler third floor lounge |
 
 **Discussion Session**
 <br> Location: Tyler 3rd Floor
