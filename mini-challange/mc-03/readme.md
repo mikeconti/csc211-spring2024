@@ -18,6 +18,7 @@ while (std::cin >> value) {
 }
 ```
 If otherwise, you want to read entire strings that include whitespaces the recommended fucntion is `std::getline`.  See below an example:
+
 ```c++
 std::string name;
 std::cout << "What is your name?";
@@ -25,51 +26,46 @@ std::getline(std::cin, name);
 std::cout << "Hello " << name << "!\n";
 ```
 
+If we know the amount of input we'll be reading in, we can use a for loop to collect input:
 
-# Dot Product
+```c++
+int inputLength;
+std::cin >> inputLength;
 
-![image](https://github.com/mfaramarzi/Internship_Summer2021/blob/master/david/Generators/DotProduct/VectorImage_cropped.JPG)
+for(int i = 0; i < inputLength; i++){
 
-Calculating a dot product is a common practice in video game and graphics programming. 
-One useful application of the dot product is that it allows us to determine the angle between two vectors in space.
+// get input here
+
+}
+```
 
 
-For this assignment, you will be calculating the length of two vectors, and then computing their normalized dot product and outputting if the angle between the vectors is acute, obtuse, or perpendicular.
-If the dot product of two vectors is 0, it means they are perpendicular.  If their dot product is greater than 0, it means the angle between them is acute.  If their dot product is less than 0, it means they are obtuse.
+# License To Launch
 
-The formula for calculating a dot product of two vectors (in 2d space) is x1 * x2 + y1 * y2.
+Birk has made a new shiny rocket and just received his licence from the Bluesky Global Order (BGO) to launch anytime within the next n days. He is, however, worried that the rocket will hit space junk on its way. In order minimize the risk of a collision, Birk has made a model of how many pieces of space junk there will be for each of the next n days. He decided that he will launch his rocket on the day with the least space junk, and if there are multiple days with the same amount of space junk he of course wants to send his rocket up as early as possible.
 
-Normalizing a vector means that you are changing the length of a vector to be 1 (a unit vector).  You do this by dividing each x, y component by the length of the vector.
-
-i.e. (x/length, y/length)
-
-The formula for calculating the length of a vector is the Pythagorean formula: sqrt(x * x + y * y).
+Can you help Birk find out how many days he has to wait until he sends up his rocket?
 
 ## Input
-The input will be 4 integers separated by whitespace.  They will contain the x, y positions of the vectors: x1 y1 x2 y2.
+On the first line there is a single integer n (1≤n≤100000) the number of days for which the launch license is valid. On the second line follows n integers between 0 and 109 where the i’th integer is the amount of space junk on the i’th day. The first day is day i=0.
 
 ## Output
-The output will be a string in the format: 
+Output a single integer, the number of days Birk needs to wait before he launches his rocket.
+
+### Sample Input 1	
 ```
-Length of v1: <length_v1> 
-Length of v2: <length_v2>
-Their normalized dot product is <dot_product> and they are <angle> 
-  ```
-  
-where angle is one of "Perpendicular, Acute, Obtuse" and the lengths and dot products are rounded to a precision of 4.
-#### Sample Input 1
+5
+3 4 1 7 2
 ```
-0 1 1 0
+### Sample Output 1
+
 ```
-#### Sample Output 1
+2
 ```
-Length of v1: 1.0000
-Length of v2: 1.0000
-Their normalized dot product is 0.0000 and they are Perpendicular
-```
+
 
 
 ### Submission and Grading
-You will submit a single _zip file_ named `mc03.zip` through Gradescope.  Your zip archive must contain your source files **only**.  For each of the problems, create a file called `main_<num>.cpp` where _num_ is the question number itself with no leading zeros. Ensure _all_ of your code resides within the `main()` function within that file.  All programs **must** compile and execute without warnings.  Your programs will be automatically graded.  For each of the questions you either pass the test cases (full points) or not (zero points).
+You will submit a single _zip file_ named `mc2.zip` through Gradescope.  Your zip archive must contain your source files **only**.  For each of the problems, create a file called `main_<num>.cpp` where _num_ is the question number itself with no leading zeros. Ensure _all_ of your code resides within the `main()` function within that file.  All programs **must** compile and execute without warnings.  Your programs will be automatically graded.  For each of the questions you either pass the test cases (full points) or not (zero points).
 
 >You must be reminded that students caught cheating or plagiarizing will receive `no credit`. Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
