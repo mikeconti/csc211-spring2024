@@ -1,7 +1,5 @@
 # Exam#01 Review
 
-## Table of Contents
-
 - [Exam#01 Review](#exam01-review)
   - [Table of Contents](#table-of-contents)
   - [Exam Information](#exam-information)
@@ -25,7 +23,7 @@
 
 ## Exam Information
 
-Your first exam will be in class on Tuesday, February 20, 2024. You are permitted a single 8.5" x 11" sheet of paper with notes (hand-written) on both sides. The exam will otherwise be closed book and closed notes.
+Your first exam will be in class on Thursday, February 22, 2024. You are permitted a single 8.5" x 11" sheet of paper with notes (hand-written) on both sides. The exam will otherwise be closed book and closed notes.
 
 # Exam Topics
 
