@@ -26,8 +26,8 @@
 
 | Day | Staff Member |  Time | Location |
 | --- | --- | --- | --- |
-|Tuesday |   Matt |   4:30p - 5:30p  |Tyler 3rd Floor|
-|Thursday | Jenny |   12:00p - 1:00p  | Tyler 3rd Floor|
+|Tuesday |   Matt |   4:30p - 5:30p  | Tyler 055|
+|Thursday | Jenny |   12:00p - 1:00p  | Tyler 140 |
 
 
 **Lab**
