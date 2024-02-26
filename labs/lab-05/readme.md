@@ -50,6 +50,8 @@ Now that you've set a breakpoint, we must run the program in debug mode. You can
 $ debug50 hello
 ```
 
+**NOTE**: You <u>must</u> name your executable the same as your .cpp file or the debugger will not recognize it!
+
 ### 1.3 Debugging "Hello World"
 
 You should notice that your program stops executing at the breakpoint, and the line with the breakpoint is highlighted yellow. When debugging, the highlighted line is the next line of code to be executed. To the right you should see the debugging window, as shown below.   
