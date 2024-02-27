@@ -115,7 +115,7 @@ In this example, we declare a vector called `myVector` that holds 5 integers. We
 - The `size` method returns the number of items in the vector.
 - The `at` method returns the item at a given index in the vector.
 
-There are a few other methods that you can use to work with vectors, like `push_back`, `pop_back`, and `insert`. These methods allow you to add, remove, and modify items in the vector, and they're what make vectors so powerful. If you are interested in seeing the many methods that vectors have, you can check out the [C++ reference](https://en.cppreference.com/w/cpp/container/vector).
+There are a few other methods that you can use to work with vectors, like `push_back`, `erase`, and `insert`. These methods allow you to add, remove, and modify items in the vector, and they're what make vectors so powerful. If you are interested in seeing the many methods that vectors have, you can check out the [C++ reference](https://en.cppreference.com/w/cpp/container/vector).
 
 You can also use user input to determine the size and contents of a vector:
 
@@ -124,18 +124,14 @@ You can also use user input to determine the size and contents of a vector:
 #include <vector>
 
 int main () {
-    int size;
-    std::cout << "Enter the size of the vector: ";
-    std::cin >> size;
+    std::vector<int> myVector;
     
-    std::vector<int> myVector(size);
-    
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < myVector.size(); i++) {
         std::cout << "Enter a value for index " << i << ": ";
         std::cin >> myVector.at(i);
     }
     
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < myVector.size(); i++) {
         std::cout << myVector.at(i) << std::endl;
     }
     
