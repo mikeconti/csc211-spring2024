@@ -124,14 +124,17 @@ You can also use user input to determine the size and contents of a vector:
 #include <vector>
 
 int main () {
+    int num_elements;
+    std::cin >> num_elements;
+
     std::vector<int> myVector;
     
-    for (int i = 0; i < myVector.size(); i++) {
+    for (int i = 0; i < num_elements; i++) {
         std::cout << "Enter a value for index " << i << ": ";
         std::cin >> myVector.at(i);
     }
     
-    for (int i = 0; i < myVector.size(); i++) {
+    for (int i = 0; i < num_elements; i++) {
         std::cout << myVector.at(i) << std::endl;
     }
     
