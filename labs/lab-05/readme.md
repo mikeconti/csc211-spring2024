@@ -388,15 +388,15 @@ Functions are extremely good for making code more readable, though they are also
 
 ## 3.4 Problem Sets
 
-:white_check_mark: Question 11. Write a function that accepts 3 integers: *a*, *b*, and *c*. If *a* is even, return the **sum** of all ints between *b* and *c*. Otherwise, return the **product** of all ints between *b* and *c*.
+:white_check_mark: Program 2. Write a function that accepts 3 integers: *a*, *b*, and *c*. If *a* is even, return the **sum** of all ints between *b* and *c*. Otherwise, return the **product** of all ints between *b* and *c*.
 
-:white_check_mark: Question 12. Write a function that accepts a decimal number and returns that number in Binary.
+:white_check_mark: Program 3. Write a function that accepts a decimal number and returns that number in Binary.
 
-:white_check_mark: Question 13. Write a function that accepts an integer *n* and returns the # of digits. Ex. 1234 returns 4.
+:white_check_mark: Program 4. Write a function that accepts an integer *n* and returns the # of digits. Ex. 1234 returns 4.
 
-:white_check_mark: Question 14. Write a function that accepts an integer *n* and returns the reverse of the integer. Ex. 1234 returns 4321. Hint: Use your solution from Question 13 to help you solve this!
+:white_check_mark: Program 5. Write a function that accepts an integer *n* and returns the reverse of the integer. Ex. 1234 returns 4321. Hint: Use your solution from Question 13 to help you solve this!
 
-:white_check_mark: Question 15. Write a function that accepts an integer *n* and displays the pyramid from Lab 4 program8.cpp with *n* rows. Note: This will cause the numbers to enter double digits, which will throw off the pyramid. Bound the output of the print statements between 0 and 9. Ex. 11->1, 12->2, 37->7, 50->0.
+:white_check_mark: Program 6. Write a function that accepts an integer *n* and displays the pyramid from Lab 4 program8.cpp with *n* rows. Note: This will cause the numbers to enter double digits, which will throw off the pyramid. Bound the output of the print statements between 0 and 9. Ex. 11->1, 12->2, 37->7, 50->0.
 
 # Part 4. Submission [5 minutes]
 
