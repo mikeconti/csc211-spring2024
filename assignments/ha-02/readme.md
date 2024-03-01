@@ -1,4 +1,4 @@
-## Homework Assignment 02 (03/02/2024)
+## Homework Assignment 02 (03/03/2024)
 
 This assignment is primarily focused on control statements and functions.  You will complete the assignment individually. You are not allowed to share your code with other students. The assignment is worth a total of 100 points. If you have any questions or need any help, please visit us during office hours and/or post questions on Piazza.
 
