@@ -361,11 +361,11 @@ So, if `data` is `"42 3.14 John"`, after this operation `intValue` would be `42`
 
 :white_check_mark: Question 9. Look through the documentation for the String class. Learn what the **insert()** function does, demonstrate you understand how to use it by writing a function utilizing it, and write a comment explaining what each parameter to the function is, as well as what is happening. Note that this function has multiple versions, why is that?
 
-:white_check_mark: Question 10. Using sstream: Write a C++ program that reads a string containing two numbers separated by a space, adds them together, and outputs the result.
+:white_check_mark: Program 7. Using sstream: Write a C++ program that reads a string containing two numbers separated by a space, adds them together, and outputs the result.
 
-:white_check_mark: Question 11. Using sstream: Write a C++ program that reads a string containing multiple words separated by spaces, counts the number of words, and outputs the count.
+:white_check_mark: Program 8. Using sstream: Write a C++ program that reads a string containing multiple words separated by spaces, counts the number of words, and outputs the count.
 
-:white_check_mark: Question 12. Using sstream:Write a C++ program that reads a string containing a sequence of integers separated by commas, calculates the sum of the integers, and outputs the result.
+:white_check_mark: Program 9. Using sstream:Write a C++ program that reads a string containing a sequence of integers separated by commas, calculates the sum of the integers, and outputs the result.
 
 
 
