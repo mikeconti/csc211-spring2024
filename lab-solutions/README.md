@@ -4,7 +4,8 @@ Below, you will find a table containing links to some example solution sets for 
 
 | # | Lab Name |
 | --- | --- |
-| 1 | [IDE Intro, Basic Shell Commands, and Hello World](lab-01/lab-01.md) |
-| 2 | [Algorithms, Problem Design and Pseudocode Exercises](lab-02/lab-02.md) |
-| 3 | [Number Systems and Branching (Conditionals)](lab-03/lab-03.md) |
-| 4 | [Loops and Nested Loops](lab-04/lab-04.md) |
+| 1 | [IDE Intro, Basic Shell Commands, and Hello World](lab-01/README.md) |
+| 2 | [Algorithms, Problem Design and Pseudocode Exercises](lab-02/README.md) |
+| 3 | [Number Systems and Branching (Conditionals)](lab-03/README.md) |
+| 4 | [Loops and Nested Loops](lab-04/README.md) |
+| 5 | [Debuggers and functions](lab-05/README.md) |
