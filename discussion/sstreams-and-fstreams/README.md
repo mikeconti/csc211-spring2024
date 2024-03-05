@@ -10,7 +10,7 @@
   - [File Streams](#file-streams)
     - [Reading from a File (Input)](#reading-from-a-file-input)
     - [Exercise](#exercise-1)
-  - [Writing to a File (Output)](#writing-to-a-file-output)
+    - [Writing to a File (Output)](#writing-to-a-file-output)
     - [Exercise](#exercise-2)
 
 ## Introduction
@@ -296,7 +296,7 @@ int main () {
 
 </details>
 
-## Writing to a File (Output)
+### Writing to a File (Output)
 
 To write to a file, we use the `std::ofstream` class. This class is a subclass of `std::ostream`, which means that we can use it in the same way that we use `std::cout`. Here's an example of how to write to a file:
 
