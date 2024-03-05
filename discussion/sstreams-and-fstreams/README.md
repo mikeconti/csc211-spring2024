@@ -10,6 +10,7 @@
   - [File Streams](#file-streams)
     - [Reading from a File (Input)](#reading-from-a-file-input)
     - [Exercise](#exercise-1)
+  - [Writing to a File (Output)](#writing-to-a-file-output)
     - [Exercise](#exercise-2)
 
 ## Introduction
@@ -294,7 +295,6 @@ int main () {
 ```
 
 </details>
-```
 
 ## Writing to a File (Output)
 
