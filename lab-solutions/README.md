@@ -9,3 +9,4 @@ Below, you will find a table containing links to some example solution sets for 
 | 3 | [Number Systems and Branching (Conditionals)](lab-03/README.md) |
 | 4 | [Loops and Nested Loops](lab-04/README.md) |
 | 5 | [Debuggers and functions](lab-05/README.md) |
+| 6 | [Strings](lab-06/README.md) |
