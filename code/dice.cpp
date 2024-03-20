@@ -5,7 +5,7 @@
 
 
 // helper to implement diceRolls logic
-void diceRollHelper(int dice, std::vector<int>& chosen);
+void diceRollHelper(int dice, std::vector<int> chosen);
 
 // prints all possible outcomes of rolling the given dice
 void diceRolls(int dice);
@@ -16,7 +16,7 @@ void diceRolls(int dice) { // dice = 2
     diceRollHelper(dice, chosen);
 }
 
-void diceRollHelper(int dice, std::vector<int>& chosen) {
+void diceRollHelper(int dice, std::vector<int> chosen) {
 
 // Base Case
 if (dice == 0) {
@@ -45,7 +45,7 @@ else {
 
 int main(){
 
-    diceRolls(2);
+    diceRolls(4);
 
 return 0;
 }
