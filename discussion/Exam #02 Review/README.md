@@ -1,6 +1,6 @@
 # Exam #02 Review Session
 
-Exam #02 will be held during your regular lecture period on **Thursday, April 6, 2023**.
+Exam #02 will be held during your regular lecture period on **Thursday, April 2, 2024**.
 
 All topics that have been covered in class up until this point are fair game, though the main focus will be on (bolded topics are heavily weighted on the exam)...
 
