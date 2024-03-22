@@ -277,3 +277,5 @@ Hopefully, this was a breeze for you now! The references are a little tricky but
 That's all folks! Well, not everything, but hopefully you feel a bit better about the big topics on your upcoming exam.
 
 Best of luck - you've got this!
+
+<img src="images/meme.jpg" alt="CS Meme" width="40%"/>
