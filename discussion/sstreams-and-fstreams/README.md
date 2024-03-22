@@ -6,404 +6,308 @@
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [String Streams](#string-streams)
-    - [Exercise](#exercise)
+    - [Input String Streams](#input-string-streams)
+    - [Output String Streams](#output-string-streams)
   - [File Streams](#file-streams)
-    - [Reading from a File (Input)](#reading-from-a-file-input)
-    - [Exercise](#exercise-1)
-    - [Writing to a File (Output)](#writing-to-a-file-output)
-    - [Exercise](#exercise-2)
+    - [Input File Streams](#input-file-streams)
+    - [Output File Streams](#output-file-streams)
+    - [Safety First - Always Close Your Files](#safety-first---always-close-your-files)
+  - [Streams \& Error Handling](#streams--error-handling)
+  - [Exercises](#exercises)
 
 ## Introduction
 
-Up until this point in 211, we have used `std::cin` and `std::cout` to read input and write output for our programs. However, this isn't very realistic for real-world applications. Today, we'll cover how to use string and file streams to better handle inputs and output in C++.
+Prior to now, we have been using the standard input and output streams, `std::cin` and `std::cout`, to read and write data from the terminal. However, most real-world applications don't run through the terminal, so it's important to learn how to use streams to read and write data from other sources.
 
 ## String Streams
 
-First things first, let's include the library necessary to work with string streams:
+The first kind of stream we'll discuss is called a [string stream](https://cplusplus.com/reference/sstream/stringstream/stringstream/). String streams are used to read and write data to and from strings. There are three types of string streams: **input**, **output**, and **input/output**, which are declared as `std::istringstream`, `std::ostringstream`, and `std::stringstream`, respectively.
 
-```cpp
-#include <sstream>
-```
+To keep things simle and since ``std::stringstream`` works essentially as a combination of ``std::istringstream`` and ``std::ostringstream``, we'll focus on the input and output string streams for now.
 
-This library provides us with the `std::stringstream` class, which allows us to read from and write to strings in a way that is similar to that of `std::cin` and `std::cout`. Take, for example, the two snippets below.
+### Input String Streams
+
+Starting with input streams, let's say you have a string that contains a number, and you want to convert that string into an integer. You can use an input string stream to do this without the use of something like ``std::stoi()`` or ``std::atoi()``.
+
+**Example**: Convert a string to an integer using an input string stream.
 
 ```cpp
 #include <iostream>
+#include <sstream> // Include the sstream library
+#include <string>
 
-int main () {
-    std::string name;
-    int age;
+int main() {
+    // Declare the input string
+    std::string input;
 
-    std::cout << "Enter your name: ";
-    std::cin >> name;
+    // Get the input from the user
+    std::cout << "Enter a number: ";
+    std::getline(std::cin, input);
 
-    std::cout << "Enter your age: ";
-    std::cin >> age;
+    // Declare an input string stream
+    std::istringstream inputStream(input);
 
-    std::cout << name << " is " << age << " years old." << std::endl;
+    // Declare an integer to store the converted value
+    int number;
+
+    // Read the integer from the input stream
+    inputStream >> number;
+
+    // Output the converted integer
+    std::cout << "The number you entered was: " << number << std::endl;
 
     return 0;
 }
 ```
 
-Hopefully this first one isn't anything new to you. It's a simple program that asks the user for their name and age and then prints out a message with that information. Now, let's see how we can do the same thing using string streams:
+**Output**:
+
+```bash
+Enter a number: 42
+The number you entered was: 42
+```
+
+In this example, we first declare a string called `input` to store the user's input. We then use `std::getline()` to get the input from the user. Next, we declare an input string stream called `inputStream` and pass the `input` string to it. Finally, we declare an integer called `number` and use the input stream to read the integer from the string.
+
+### Output String Streams
+
+Output string streams work incredibly similar to ``std::cout`` with the added benefit of being able to better manipulate strings and, like input streams, easily convert other data types to strings.
+
+**Example**: Given a line of input, reverse the order of the words using an output string stream. We'll also include an input string stream to read the words from the input and give us a better understanding of how to use both input and output string streams together.
 
 ```cpp
 #include <iostream>
-#include <sstream>
+#include <sstream> // Include the sstream library
+#include <string>
+#include <vector>
 
-int main () {
-    std::string line;
-    std::string name;
-    int age;
+int main() {
+    // Declare the input string
+    std::string input;
 
-    std::cout << "Enter your name and age (separated by a space): ";
-    std::getline(std::cin, line);
+    // Get the input from the user
+    std::cout << "Enter a line of text: ";
+    std::getline(std::cin, input);
 
-    std::iostringstream ss(line);
-    ss >> name >> age;
+    // Declare an output string stream
+    std::ostringstream outputStream;
 
-    std::cout << name << " is " << age << " years old." << std::endl;
+    // Declare a vector to store the words
+    std::vector<std::string> words;
+
+    // Declare an input string stream
+    std::istringstream inputStream(input);
+
+    // Read the words from the input stream
+    std::string word;
+
+    while (inputStream >> word) {
+        words.push_back(word);
+    }
+
+    // Reverse the order of the words
+    for (int idx = 0; idx < words.size(); idx++) {
+        outputStream << words[words.size() - idx - 1] << " ";
+    }
+
+    // Output the reversed line of text
+    std::cout << "The reversed line of text is: " << outputStream.str() << std::endl;
 
     return 0;
 }
 ```
 
-In this example, we use `std::getline` to read a line of input from the user, and then we use `std::istringstream` to read from that line as if it were `std::cin`. This allows us to use the same input and output patterns that we're used to, but with strings instead of the console.
+**Output**:
 
-Notice that we only include the `<sstream>` library despite using a `std::ifstream` object. This is because `std::ifstream` is a subclass of `std::istream`, which is included in the `<iostream>` library. The same is true for `std::ofstream` and `std::ostream`.
-
-### Exercise
-
-✅ [`exercise_1.cpp`] Now that you'e seen how to use string streams for input, try to write a program that uses string streams for output. The program should ask the user for their name and age and then print out a message with that information.
-
-<details><summary>Solution</summary>
-
-Here is a sample solution based upon what we've learned so far:
-
-```cpp
-#include <iostream>
-#include <sstream>
-
-int main () {
-    // Create our variables to hold the input.
-    std::string name;
-    int age;
-
-    // Prompt the user for their name and age.
-    std::cout << "Enter your name and age (separated by a space): ";
-    
-    // Get the input from the user.
-    std::string line;
-    std::getline(std::cin, line);
-
-    // Create our input string stream and extract the name and age.
-    std::istringstream ss(line);
-    ss >> name >> age;
-    
-    // Create our output string stream.
-    std::ostringstream oss;
-
-    // Output the message to the output string stream.
-    oss << "Hello, " << name << ". You are " << age << " years old.";
-
-    // Print the message to the console.
-    std::cout << oss.str() << std::endl;
-
-    return 0;
-}
+```bash
+Enter a line of text: Hello, world! This is a test.
+The reversed line of text is: test. a is This world! Hello,
 ```
 
-</details>
+In this example, we first use an input string stream to read the words from the input line and store them in a vector. Notice how simple it is to read the words from the input stream using the `>>` operator? It's just like reading from `std::cin`! That aside, though, we then use an output string stream to reverse the order of the words and output the reversed line of text. Nothing too fancy, but it's a great way to see how input and output string streams can be used together.
 
 ## File Streams
 
-Now that we've covered string streams, we can utilize them in combination with file streams to read and write to files. This is a very common pattern in C++ and is used in many real-world applications.
+The second kind of stream we'll discuss is called a [file stream](https://cplusplus.com/reference/fstream/fstream/). File streams are used to read and write data to and from files on your computer. There are three types of file streams: **input**, **output**, and **input/output**, which are declared as `std::ifstream`, `std::ofstream`, and `std::fstream`, respectively.
 
-### Reading from a File (Input)
+Similarly to string streams, we'll focus on the input and output file streams for now, as `std::fstream` works essentially as a combination of `std::ifstream` and `std::ofstream`.
 
-To read from a file, we use the `std::ifstream` class. This class is a subclass of `std::istream`, which means that we can use it in the same way that we use `std::cin`. Here's an example of how to read from a file:
+### Input File Streams
 
-**Sample Program**:
+Starting with input streams, let's say you have a file that contains a list of numbers, and you want to read those numbers into a vector. Using an input file stream, you can easily do just that in just a few lines of code.
 
-```cpp
-#include <iostream>
-#include <fstream>
-
-int main () {
-    // Open the file to read our input from.
-    std::ifstream file("input.txt");
-
-    // Check if the file was opened successfully.
-    if (!file.is_open()) {
-        std::cerr << "Failed to open file." << std::endl;
-        return 1;
-    }
-
-    // Read the file line by line.
-    std::string line;
-
-    while (std::getline(file, line)) {
-        std::cout << line << std::endl;
-    }
-
-    // Close the file.
-    file.close();
-
-    return 0;
-}
-```
-
-**Sample Output**:
-
-```plaintext
-This is the first line of the file.
-This is the second line of the file.
-I like spaghetti and I think that fact belongs on line 3!
-```
-
-In this example, we use `std::ifstream` to open a file called `input.txt` and then we use `std::getline` to read the file line by line. This is a common pattern for reading from files, and it's a good way to avoid reading the entire file into memory at once.
-
-**But wait!!!**
-
-What if we want to parse through each line, separating the data by a delimiter - like a space, for example? We can use string streams to do this! Here's an example:
-
-**Sample Program**:
+**Example**: Read a list of numbers from a file into a vector.
 
 ```cpp
 #include <iostream>
-#include <fstream>
-#include <sstream>
-
-int main () {
-    // Open the file to read our input
-    std::ifstream file("input.txt");
-
-    // Check if the file was opened successfully
-    if (!file.is_open()) {
-        std::cerr << "Failed to open file." << std::endl;
-        return 1;
-    }
-
-    // Read the file line by line
-    std::string line;
-
-    while (std::getline(file, line)) {
-        std::istringstream ss(line);
-        std::string word;
-
-        // Parse the line using a string stream
-        while (ss >> word) {
-            std::cout << word << std::endl;
-        }
-    }
-
-    // Close the file
-    file.close();
-
-    return 0;
-}
-```
-
-**Sample Output**:
-
-```plaintext
-This
-is
-the
-first
-line
-of
-the
-file.
-This
-is
-the
-second
-line
-of
-the
-file.
-I
-like
-spaghetti
-and
-I
-think
-that
-fact
-belongs
-on
-line
-3!
-```
-
-In this example, we use `std::istringstream` to parse each line of the file into individual words. While the example is simple, it demonstrates how we can use string streams to parse data from a file in a way that is similar to how we parse data from the console.
-
-### Exercise
-
-✅ [`exercise_2.cpp`] Write a program that reads in the file below, summing all of the numbers in the file and printing out the total sum.
-
-**Sample File**:
-
-```plaintext
-1 2 3 4 5
-6 7 8 9 10
-```
-
-<details><summary>Solution</summary>
-
-Here is a sample solution based upon what we've learned so far:
-
-```cpp
-#include <iostream>
-#include <fstream>
-#include <sstream>
-
-int main () {
-    // Open the file to read our input
-    std::ifstream file("input.txt");
-
-    // Check if the file was opened successfully
-    if (!file.is_open()) {
-        std::cerr << "Failed to open file." << std::endl;
-        return 1;
-    }
-
-    // Read the file line by line
-    std::string line;
-    int sum = 0;
-
-    while (std::getline(file, line)) {
-        std::istringstream ss(line);
-        int number;
-
-        // Parse the line using a string stream
-        while (ss >> number) {
-            sum += number;
-        }
-    }
-
-    // Close the file
-    file.close();
-
-    // Print the sum to the console
-    std::cout << "The sum of the numbers in the file is: " << sum << std::endl;
-
-    return 0;
-}
-```
-
-</details>
-
-### Writing to a File (Output)
-
-To write to a file, we use the `std::ofstream` class. This class is a subclass of `std::ostream`, which means that we can use it in the same way that we use `std::cout`. Here's an example of how to write to a file:
-
-**Sample Program**:
-
-```cpp
-#include <iostream>
-#include <fstream>
-
-int main () {
-    // Open the file to write our output to
-    std::ofstream file("output.txt");
-
-    // Check if the file was opened successfully
-    if (!file.is_open()) {
-        std::cerr << "Failed to open file." << std::endl;
-        return 1;
-    }
-
-    // Write to the file
-    file << "This is the first line of the file." << std::endl;
-    file << "This is the second line of the file." << std::endl;
-    file << "I like spaghetti and I think that fact belongs on line 3!" << std::endl;
-
-    // Close the file
-    file.close();
-
-    return 0;
-}
-```
-
-In this example, we use `std::ofstream` to open a file called `output.txt` and then we use the `<<` operator to write to the file. This is a common pattern for writing to files, and it's a good way to avoid writing the entire file at once.
-
-Unlike reading from a file, writing to a file is simple enough that we don't need to use string streams. However, if you want to format your output using `std::ostringstream` before writing it to a file, you can do so in the same way that you would format your output before writing it to the console.
-
-### Exercise
-
-✅ [`exercise_3.cpp`] Write a program that reads in the file below, summing all of the numbers in the file, and then writes the equation for the total sum and the sum itself to a new file called `output.txt`.
-
-**Sample File**:
-
-```plaintext
-1 2 3 4 5
-6 7 8 9 10
-```
-
-<details><summary>Solution</summary>
-
-Here is a sample solution based upon what we've learned so far:
-
-```cpp
-#include <iostream>
-#include <fstream>
-#include <sstream>
+#include <fstream> // Include the fstream library
 #include <vector>
 
-int main () {
-    // Open the file to read our input
-    std::ifstream file("input.txt");
+int main() {
+    // Declare the input file stream
+    std::ifstream inputFile("numbers.txt");
 
-    // Check if the file was opened successfully
-    if (!file.is_open()) {
-        std::cerr << "Failed to open file." << std::endl;
-        return 1;
-    }
-
-    // Read the file line by line
+    // Declare a vector to store the numbers
     std::vector<int> numbers;
-    std::string line;
-    int sum = 0;
 
-    while (std::getline(file, line)) {
-        std::istringstream ss(line);
-        int number;
+    // Read the numbers from the file
+    int number;
 
-        // Parse the line using a string stream
-        while (ss >> number) {
-            numbers.push_back(number);
-            sum += number;
-        }
+    while (inputFile >> number) {
+        numbers.push_back(number);
     }
 
-    // Close the file
-    file.close();
+    // Output the numbers
+    std::cout << "The numbers in the file are: ";
 
-    // Open the file to write our output to
-    std::ofstream outputFile("output.txt");
-
-    // Check if the file was opened successfully
-    if (!outputFile.is_open()) {
-        std::cerr << "Failed to open file." << std::endl;
-        return 1;
+    for (int num : numbers) {
+        std::cout << num << " ";
     }
 
-    // Write the equation for the sum to the file
-    outputFile << "Sum: ";
-    for (size_t i = 0; i < numbers.size(); i++) {
-        outputFile << numbers[i];
-        if (i != numbers.size() - 1) {
-            outputFile << " + ";
-        }
-    }
-    outputFile << " = " << sum << std::endl;
-
-    // Close the file
-    outputFile.close();
+    std::cout << std::endl;
 
     return 0;
 }
 ```
+
+Assuming the given **input** is...
+
+```plaintext
+1 2 3 4 5 6 7 8 9 10
+```
+
+...the **output** will be...
+
+```bash
+The numbers in the file are: 1 2 3 4 5 6 7 8 9 10
+```
+
+In this example, we first declare an input file stream called `inputFile` and provide it the name of the file we'd like to read from. We then declare a vector called `numbers` to store the numbers read from the file and use a while loop to read them into the vector. Finally, we output the numbers to the terminal. It's that simple!
+
+### Output File Streams
+
+Output file streams work similarly to input file streams, but instead of reading data from a file, you write data to a file. Let's say you have a vector of numbers and you want to write those numbers to a file. Using an output file stream, you can easily do just that in a way that you'll notice feels quite familiar.
+
+**Example**: Write a vector of numbers to a file.
+
+```cpp
+#include <iostream>
+#include <fstream> // Include the fstream library
+#include <vector>
+
+int main() {
+    // Declare the output file stream
+    std::ofstream outputFile("numbers.txt");
+
+    // Declare a vector of numbers
+    std::vector<int> numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    // Write the numbers to the file
+    for (int num : numbers) { // Loop through the numbers
+        outputFile << num << " "; // Write the number to the file
+    }
+
+    // Output the success message
+    std::cout << "The numbers have been written to the file." << std::endl;
+
+    return 0;
+}
+```
+
+**Output (terminal)**:
+
+```bash
+The numbers have been written to the file.
+```
+
+**Output (numbers.txt)**:
+
+```plaintext
+1 2 3 4 5 6 7 8 9 10
+```
+
+In this example, we first declare an output file stream called `outputFile` and provide it the name of the file we'd like to write to. We then declare a vector called `numbers` and write each number to the file using a for loop. Finally, we output a success message to the terminal. It's that simple!
+
+### Safety First - Always Close Your Files
+
+When working with file streams, it's important to close the file after you're done reading from or writing to it. This is done using the `close()` function on the file stream you're working with.
+
+That call should look something like this:
+
+```cpp
+inputFile.close();
+```
+
+or
+
+```cpp
+outputFile.close();
+```
+
+It's important to close the file after you're done with it to ensure that the data you've written to the file is saved and that the file is properly closed. If you don't close the file, the data you've written to it may not be saved, and the file may remain open, which can cause issues when trying to access the file later on.
+
+## Streams & Error Handling
+
+When working with streams, it's important to handle errors that may occur. For example, if you try to open a file that doesn't exist, the file stream will fail, and you'll need to check for this failure before proceeding. You can do this by checking the stream's state using the `fail()` function.
+
+**Example**: Check if a file stream has failed to open a file.
+
+```cpp
+#include <iostream>
+#include <fstream> // Include the fstream library
+
+int main() {
+    // Declare the input file stream
+    std::ifstream inputFile("nonexistent.txt");
+
+    // Check if the file stream has failed
+    if (inputFile.fail()) {
+        std::cerr << "Error: Failed to open file." << std::endl;
+        return 1;
+    }
+
+    return 0;
+}
+```
+
+Alternatively, you can use the `is_open()` function to check if the file stream has successfully opened a file.
+
+**Example**: Check if a file stream has successfully opened a file.
+
+```cpp
+#include <iostream>
+#include <fstream> // Include the fstream library
+
+int main() {
+    // Declare the input file stream
+    std::ifstream inputFile("numbers.txt");
+
+    // Check if the file stream is open
+    if (!inputFile.is_open()) {
+        std::cerr << "Error: Failed to open file." << std::endl;
+        return 1;
+    }
+
+    return 0;
+}
+```
+
+In both examples, we first declare an input file stream and provide it the name of the file we'd like to open. We then check if the file stream has failed to open the file using the `fail()` function in the first example and the `is_open()` function in the second example. If the file stream has failed to open the file, we output an error message to the terminal and return a non-zero value to indicate that an error occurred.
+
+## Exercises
+
+✅ [``exercise01.cpp``]: Write a program that uses string streams to read a line of text from the user and output the number of words in the line.
+
+> **Solution**: [``exercise01.cpp``](src/exercise01.cpp)
+
+✅ [``exercise02.cpp``]: Write a program that uses string streams that, given a line of input, removes all the vowels from the line using output string streams and outputs the modified line.
+
+> **Solution**: [``exercise02.cpp``](src/exercise02.cpp)
+
+✅ [``exercise03.cpp``]: Write a program that uses file streams to read a list of numbers from a file and output the sum of the numbers.
+
+> **Solution**: [``exercise03.cpp``](src/exercise03.cpp)
+
+✅ [``exercise04.cpp``]: Write a program that uses file streams to read a list of numbers from a file and write the sum of the numbers to a new file.
+
+> **Solution**: [``exercise04.cpp``](src/exercise04.cpp)
